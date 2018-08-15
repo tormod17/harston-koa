@@ -1,0 +1,69 @@
+include ./head.pug
+body
+  include ./header.pug
+  .page-header
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-6.col-xs-12
+          .page-section
+            h1.page-title Profile
+        .col-lg-4.col-md-4.col-sm-6.hidden-xs
+          .page-breadcrumb
+            ol.breadcrumb
+              li
+                a(href='#') Home
+              li Profile
+  include ./aboutus.pug
+  .space-medium.bg-light
+    .container
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .section-title
+            h2 My team members
+      .row
+        each member in team
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .team-block
+              .caption-style-1
+                .style-1
+                  img.img-responsive(src=member.image, alt='')
+                  .caption
+                    .blur
+                    .caption-text
+                      p member.email
+              .team-content
+                h3.team-title #{member.name}
+                span.team-meta #{member.position}
+  // team-area
+  .space-medium
+    .container
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12.mb40
+          .section-title
+            h2 Team service areas
+      .row
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12
+          .team-area
+            ul.map-icon.map-pin
+              li Mumbai
+              li Delhi
+              li Banglore
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12
+          .team-area
+            ul.map-icon.map-pin
+              li Ahmedabad
+              li surat
+              li pune
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12
+          .team-area
+            ul.map-icon.map-pin
+              li jaipur
+              li lucknow
+              li vadodara
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12
+          .team-area
+            ul.map-icon.map-pin
+              li Hyderabad
+              li Rajkot
+              li Agra
+  include ./footer.pug

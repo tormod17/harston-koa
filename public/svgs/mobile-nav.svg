@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#00778B;}
+</style>
+<title>mobile-nav</title>
+<g id="Layer_2">
+	<g id="for-position-only-DO-NOT-DELETE">
+		<rect class="st0" width="80" height="80"/>
+	</g>
+	<g id="normal">
+		<path id="closeIcon" d="M20.7,20l6.1-6.1c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0L20,19.3l-6.1-6.1c-0.2-0.2-0.5-0.2-0.7,0    s-0.2,0.5,0,0.7l6.1,6.1l-6.1,6.1c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0l0,0l6.1-6.1l6.1,6.1c0.2,0.2,0.5,0.2,0.7,0    s0.2-0.5,0-0.7L20.7,20z"/>
+		<path id="openIcon" d="M66.5,27h-13c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h13c0.3,0,0.5,0.2,0.5,0.5S66.8,27,66.5,27z M67,20    c0-0.3-0.2-0.5-0.5-0.5h-13c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h13C66.8,20.5,67,20.3,67,20z M67,13.5c0-0.3-0.2-0.5-0.5-0.5    h-13c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h13C66.8,14,67,13.8,67,13.5z"/>
+	</g>
+	<g id="hover">
+		<path id="closeIcon-2" class="st1" d="M20.7,60l6.1-6.1c0.2-0.2,0.2-0.5,0-0.7s-0.5-0.2-0.7,0l0,0L20,59.3l-6.1-6.1    c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l6.1,6.1l-6.1,6.1c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0l6.1-6.1l6.1,6.1    c0.2,0.2,0.5,0.2,0.7,0s0.2-0.5,0-0.7l0,0L20.7,60z"/>
+		<path id="openIcon-2" class="st1" d="M66.5,67h-13c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h13c0.3,0,0.5,0.2,0.5,0.5    S66.8,67,66.5,67z M67,60c0-0.3-0.2-0.5-0.5-0.5h-13c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h13C66.8,60.5,67,60.3,67,60z     M67,53.5c0-0.3-0.2-0.5-0.5-0.5h-13c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h13C66.8,54,67,53.8,67,53.5z"/>
+	</g>
+</g>
+<div xmlns="" id="divScriptsUsed" style="display: none"/><script xmlns="" id="globalVarsDetection" src="chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js"/></svg>

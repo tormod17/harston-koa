@@ -1,0 +1,15 @@
+
+.slider
+  .owl-carousel.owl-one.owl-theme
+    each slide in slides
+      .item
+        .slider-img
+          img(src=slide.image, alt='')
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .slider-captions
+                h1.slider-title #{slide.title}
+                p.slider-text.hidden-xs #{slide.subtitle}
+                a.btn.btn-primary.btn-lg.hidden-sm.hidden-xs(href='#') #{slide.button}
+

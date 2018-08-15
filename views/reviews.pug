@@ -1,0 +1,35 @@
+
+.space-medium.bg-light
+  .container-fluid
+    .row
+      // section-title
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+        .section-title
+          h1 Happy clients
+          p Donec ut dui justonvel libero cursus facilisis exsed luct felis.
+    // /.section-title
+    .testimonials-carousel
+      .owl-carousel.owl-two.owl-theme
+        each review in reviews
+          - var n = 0;
+          .item
+            // testimonials
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .testimonial-block
+                .testimonial-content
+                  p
+                    | #{review.review_post_quote}
+                .testimonial-user-block
+                  .testimonial-img.mb20
+                    img.img-circle(src=review.review_post_image alt='')
+                  .testimonial-meta
+                    h5.testimonial-title #{review.review_post_name}
+                    p.testimonial-address-text #{review.review_post_address}
+                    .star-rating
+                      while n < Number(review.review_post_ratings)
+                        span
+                          i.fa.fa-star(data-id=n++)
+               
+          // /.testimonials
+      
+

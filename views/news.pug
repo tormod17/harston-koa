@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  include ./header.pug
+  // page-header
+  .page-header
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-6.col-xs-12
+          .page-section
+            h1.page-title News
+        .col-lg-4.col-md-4.col-sm-6.hidden-xs
+          .page-breadcrumb
+            ol.breadcrumb
+              li
+                a(href='#') Home
+              li News
+  // /.page-header
+  // blog-post
+  .content
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-7.col-xs-12
+          .post-holder
+            each post in news
+              // post block
+              div
+                h2.mb40
+                  a(href='#') #{post.title.rendered}
+                .row
+                  .col-lg-6.col-md-6.col-sm-6.col-xs-12.pdt20
+                    .meta
+                      span.meta-date #{post.date.split('T')[0]}
+                      span |
+                      span.meta-admin
+                        | By 
+                        a(href='#') Admin
+                      span |
+                      span.meta-comments 08 comments
+                    p #{post.content.rendered.replace('<p>', '').replace('</p>', '')}
+                    a.btn.btn-primary.btn-xs(href='post/'+post.id) read more
+                  .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                    .post-img
+                      a.imghover(href='#')
+                        img.img-responsive(src=post.acf.news_post_image, alt='')
+          .st-pagination
+            ul.pagination
+              li
+                a(href='#', aria-label='previous')
+                  span(aria-hidden='true') Previous
+              li.active
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#', aria-label='Next')
+                  span(aria-hidden='true') Next
+        .col-lg-4.col-md-4.col-sm-5.col-xs-12
+          // widget-recent-post-start
+          .widget.widget-recent-post
+            h2.widget-title Recent Post
+            ul
+              each rpost in  news
+                li
+                  .recent-post
+                    .recent-img
+                      a.imghover(href='#')
+                        img.img-responsive(src=rpost.acf.news_post_image, alt='')
+                    h5
+                      a.title(href='#')
+                        | #{rpost.title.rendered}
+                    span.meta.meta-date  #{rpost.date.split('T')[0]}
+          // widget-recent-post-close
+          // widget-Tag start
+          .widget.widget-tags
+            h2.widget-title Tags
+              each tag in tags
+                a(href='#') #{tag} 
+          // widget-Tag close
+  // /.blog Post
+  // footer

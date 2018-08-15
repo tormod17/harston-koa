@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .page-header
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-6.col-xs-12
+          .page-section
+            h1.page-title News - Article
+        .col-lg-4.col-md-4.col-sm-6.hidden-xs
+          .page-breadcrumb
+            ol.breadcrumb
+              li
+                a(href='/') Home
+              li News - Article
+  .content
+    .container
+      .row
+        .col-lg-8.col-md-8.col-sm-7.col-xs-12
+          #{content}
+        .col-lg-4.col-md-4.col-sm-5.col-xs-12
+          // widget-recent-post-start
+          .widget.widget-recent-post
+            h2.widget-title Recent Post
+            ul
+              each rpost in  news
+                li
+                  .recent-post
+                    .recent-img
+                      a.imghover(href='#')
+                        img.img-responsive(src=rpost.acf.news_post_image, alt='')
+                    h5
+                      a.title(href='#')
+                        | #{rpost.title.rendered}
+                    span.meta.meta-date  #{rpost.date.split('T')[0]}
+          // widget-recent-post-close
+          // widget-Tag start
+          .widget.widget-tags
+            h2.widget-title Tags
+              each tag in tags
+                a(href='#') #{tag} 
+          // widget-Tag close
+  

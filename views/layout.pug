@@ -1,0 +1,115 @@
+html
+  head
+    meta(charset='utf-8')
+    title Harston
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='application-name', content='Preact Starter')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-title', content='Preact Starter')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    link(rel='apple-touch-icon', sizes='180x180', href='/icon/apple-touch-icon.png')
+    link(rel='manifest', href='/manifest.json')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    
+    link(href="css/style.css" rel="stylesheet")
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+    // FontAwesome CSS
+    link(rel='stylesheet', type='text/css', href='css/fontello.css')
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+    link(href="css/owl.carousel.css" rel="stylesheet")
+    link(href="css/owl.theme.default.css" rel="stylesheet")
+    meta(name='msapplication-tap-highlight', content='no')
+    meta(name='msapplication-TileImage', content='/icon/ms-touch-icon-144x144-precomposed.png')
+    meta(name='msapplication-TileColor', content='#F2F2F2')
+    meta(name='theme-color', content='#673AB8')
+    link(href='css/custom.css', type='text/css', rel='stylesheet')
+  body
+    block content
+    .footer
+      .container
+        .row
+          // about-us
+          .col-lg-6.col-md-6.col-sm-6.col-xs-12
+            .footer-widget
+              div
+                h3.footer-title #{company_name}
+                p  #{company_aboutus}
+                .ft-social
+                  span
+                    a.btn-social.btn-facebook(href='#')
+                      i.fa.fa-facebook
+                  span
+                    a.btn-social.btn-twitter(href='#')
+                      i.fa.fa-twitter
+                  span
+                    a.btn-social.btn-googleplus(href='#')
+                      i.fa.fa-google-plus
+                  span
+                    a.btn-social.btn-linkedin(href='#')
+                      i.fa.fa-linkedin
+          // /.about us
+          // footer-info
+          .col-lg-3.col-md-3.col-sm-6.col-xs-12
+            .footer-widget
+              h3.footer-title Contact Info
+              .info-widget
+                .info-icon
+                  i.fa.fa-map-marker
+                .info-text
+                  h4.info-title Office Address
+                  p #{company_address}
+              .info-widget
+                .info-icon
+                  i.fa.fa-phone
+                .info-text
+                  h4.info-title Phone Call
+                  p
+                    | #{company_phone}
+              .info-widget
+                .info-icon
+                  i.fa.fa-envelope
+                .info-text
+                  h4.info-title Email Me
+                  p #{company_email} 
+          // /.footer-info
+          // footer-useful links
+          .col-lg-2.col-md-2.col-sm-6.col-xs-12
+            .footer-widget
+              h3.footer-title Quick Links
+              ul.arrow.arrow-right
+                li
+                  a(href='/') Home
+                li
+                  a(href='/profile') Profile
+                li
+                  a(href='https://realla.co/organisations/8615/listings') Properties
+                li
+                  a(href='/news') News
+                li
+                  a(href='/') Services
+          // /.footer-useful links
+    // tiny-footer
+    .tiny-footer
+      .container
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            p.mute-text
+              | Copyright © All Rights Reserved 2020 Template Design by
+              a.copyrightlink(href='https://easetemplate.com/', target='_blank') EaseTemplate
+      // /. tiny-footer
+    // /.footer
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='js/jquery.min.js', type='text/javascript')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='js/bootstrap.min.js', type='text/javascript')
+    script(src='js/menumaker.js', type='text/javascript')
+    script(src='js/navigation.js', type='text/javascript')
+    script(type='text/javascript', src='js/jquery.isotope.min.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/multiple-carousel.js')
+
+
+

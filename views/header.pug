@@ -1,0 +1,48 @@
+.header-wrapper.navbar-fixed-top
+  .container
+    .row
+      .top-bar
+        .col-lg-6.col-md-4.hidden-sm.hidden-xs
+          p.top-text     
+        .col-lg-6.col-md-8.col-sm-12.hidden-xs
+          ul
+            li.pdr40
+              span.top-bar-icon
+                i.fa.fa-phone
+              span.top-text #{company_phone}
+            li.pdr40
+              span.top-bar-icon
+                i.fa.fa-envelope
+              span.top-text #{company_email}
+            li
+              .social-icon
+                span
+                  a.btn-social.btn-facebook(href='#')
+                    i.fa.fa-facebook
+                span
+                  a.btn-social.btn-twitter(href='#')
+                    i.fa.fa-twitter
+                span
+                  a.btn-social.btn-googleplus(href='#')
+                    i.fa.fa-google-plus
+                span
+                  a.btn-social.btn-linkedin(href='#')
+                    i.fa.fa-linkedin
+    .navigation
+      .col-lg-2.col-md-2.col-sm-3.col-xs-12
+        .logo
+          a(href='/')
+            img.header-logo(src='/svgs/desktop-logo.svg', alt='')
+      .col-lg-10.col-md-10.col-sm-9.col-xs-12
+        #navigation
+          ul
+            li.active
+              a(href='/') Home
+            li
+              a(href='/profile') Profile
+            li
+              a(href='https://realla.co/organisations/8615/listings') Properties
+            li
+              a(href='/news') News
+            li
+              a(href='/') Services
